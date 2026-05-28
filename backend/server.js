@@ -12,6 +12,8 @@ const searchRoutes = require('./src/routes/search');
 const adminRoutes = require('./src/routes/admin');
 const analyticsRoutes = require('./src/routes/analytics');
 const statsRoutes = require('./src/routes/stats');
+const jwtRoutes = require('./src/routes/jwt');
+const middlewareRoutes = require('./src/routes/middleware');
 
 // Load env vars
 dotenv.config();
@@ -40,6 +42,8 @@ app.use('/api/v1/search', searchRoutes);
 app.use('/api/v1/admin', adminRoutes);
 app.use('/api/v1/analytics', analyticsRoutes);
 app.use('/api/v1/stats', statsRoutes);
+app.use('/api/v1/jwt', jwtRoutes);
+app.use('/api/v1/middleware', middlewareRoutes);
 
 // Fallback error handler
 app.use((err, req, res, next) => {

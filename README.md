@@ -53,6 +53,30 @@ backend/
 ├── server.js           # Production Express initialization & health check routing
 ├── .env                # Swappable database and JWT keys
 └── package.json        # Production scripts and dependencies
+
+frontend/
+├── public/             # Static assets (favicons, SVG icons, background images)
+├── src/
+│   ├── assets/         # Project images and global graphical assets
+│   ├── components/     # Reusable UI React components (e.g., DashboardLayout)
+│   ├── pages/          # Primary application views and routing destinations
+│   │   ├── AdminPanel.jsx
+│   │   ├── AnalyticsPage.jsx
+│   │   ├── AuthPage.jsx
+│   │   ├── BookmarksPage.jsx
+│   │   ├── HistoryPage.jsx
+│   │   ├── LawDirectory.jsx
+│   │   ├── SettingsPage.jsx
+│   │   └── SupportPage.jsx
+│   ├── utils/          # Global utilities and Axios API interceptor configurations
+│   │   └── api.js
+│   ├── App.jsx         # Core React Router switch and theme provider
+│   ├── main.jsx        # React DOM mounting entrypoint
+│   └── index.css       # Global Tailwind CSS directives and custom typography
+├── .env                # Swappable frontend API base URLs
+├── vercel.json         # Vercel SPA routing rules for production deployment
+├── vite.config.js      # Vite build pipeline and plugin configurations
+└── package.json        # Frontend dependencies and dev scripts
 ```
 
 ---

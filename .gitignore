@@ -26,5 +26,10 @@ node_modules/
 backend_temp_completed/
 backend_extracted/
 
+# Frontend builds
+dist/
+dist-ssr/
+*.local
+
 # NOTE: The dataset/ folder is INTENTIONALLY NOT IGNORED 
 # because it acts as the permanent database backup.

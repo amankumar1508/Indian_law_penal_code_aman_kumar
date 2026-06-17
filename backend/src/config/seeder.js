@@ -51,10 +51,10 @@ const seedData = async () => {
           act: file.act,
           category: file.category,
           chapter: item.chapter || 1,
-          chapter_title: item.chapter_title || 'General',
+          chapter_title: item.chapter_title || item.Chapter_title || 'General',
           section: String(item.Section || item.section || idx + 1),
-          section_title: item.section_title || 'Legal Provision',
-          section_desc: item.section_desc || 'Details of this legal clause or penal code section.',
+          section_title: item.section_title || item.Section_title || item.title || 'Legal Provision',
+          section_desc: item.section_desc || item.section_desc || item.description || 'Details of this legal clause or penal code section.',
           bailable: bailableValue,
           cognizable: cognizableValue,
           views: Math.floor(Math.random() * 500) + 10 // randomized views for analytics tests

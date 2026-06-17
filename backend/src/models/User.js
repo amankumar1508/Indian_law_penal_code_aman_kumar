@@ -35,6 +35,20 @@ const UserSchema = new mongoose.Schema({
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
+  bookmarks: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Law'
+  }],
+  history: [{
+    law: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Law'
+    },
+    viewedAt: {
+      type: Date,
+      default: Date.now
+    }
+  }],
   createdAt: {
     type: Date,
     default: Date.now

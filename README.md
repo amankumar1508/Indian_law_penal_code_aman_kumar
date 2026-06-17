@@ -1,6 +1,6 @@
-# 🏛️ Indian Law Penal Code API - Enterprise Backend (2026 Submission)
+# 🏛️ LexVantage - Indian Law Penal Code Platform (Full Stack 2026 Submission)
 
-Welcome to the production-grade, high-performance RESTful API backend for the **Indian Law Penal Code** platform. This system is designed using Node.js, Express, and MongoDB, fully adhering to standard MVC architectural paradigms. It manages complex legal datasets (IPC, CrPC, CPC, MVA, HMA, IEA, IDA, NIA) and exposes them through a highly secure, rate-limited, and optimized API structure.
+Welcome to **LexVantage**, a comprehensive, production-grade platform for the **Indian Law Penal Code**. This repository houses both the high-performance RESTful API backend (Node.js, Express, MongoDB) and the sleek, responsive frontend application (React, Vite, Tailwind CSS). It manages complex legal datasets (IPC, CrPC, CPC, MVA, HMA, IEA, IDA, NIA) and exposes them through a highly secure, optimized API structure, paired with a modern, high-contrast monochrome glassmorphism user interface.
 
 ---
 
@@ -57,10 +57,34 @@ backend/
 
 ---
 
+## 🖥️ Frontend Architecture & UI Features
+
+The frontend is built for speed, accessibility, and a premium visual aesthetic.
+
+- **React + Vite**: Lightning-fast hot module replacement (HMR) and optimized production builds.
+- **Tailwind CSS**: Utility-first styling with a custom monochrome black-and-white theme and advanced `backdrop-grayscale` glassmorphism.
+- **Client-Side Routing**: Handled seamlessly by React Router with `vercel.json` rewrite rules for SPA deployment.
+- **Axios Interceptors**: Automated Bearer token injection for all authenticated API requests.
+- **Features**: 
+  - Real-time Fuzzy Search & Filtering
+  - Search History & Recently Viewed tracking
+  - Bookmarks & Saved Laws
+  - User Profiles & Settings Dashboard
+  - Admin Analytics integration
+
+---
+
 ## 🛠️ Project Setup & Installation
 
 ### 1. Install Dependencies
+You need to install dependencies for **both** the backend and the frontend.
 ```bash
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
 npm install
 ```
 
@@ -74,19 +98,31 @@ JWT_EXPIRES_IN=30d
 NODE_ENV=development
 ```
 
+Create a `.env` file in the root of the `frontend/` directory:
+```env
+VITE_API_URL=http://localhost:5000/api/v1
+```
+
 ### 3. Seed Database
 Parses and bulk-imports **1,968 total legal documents** from clean source JSONs into MongoDB:
 ```bash
+cd backend
 npm run seed
 ```
 
-### 4. Run Server
-```bash
-# Developer Hot-Reloading Mode (using nodemon)
-npm run dev
+### 4. Run the Application
+You will need two terminal windows to run the full stack locally.
 
-# Standard Production Mode
-npm start
+**Terminal 1 (Backend):**
+```bash
+cd backend
+npm run dev
+```
+
+**Terminal 2 (Frontend):**
+```bash
+cd frontend
+npm run dev
 ```
 
 ---

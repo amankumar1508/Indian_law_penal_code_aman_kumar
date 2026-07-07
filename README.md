@@ -1,6 +1,22 @@
-# 🏛️ LexVantage - Indian Law Penal Code Platform (Full Stack 2026 Submission)
+# 🏛️ LexVantage
+### The Comprehensive Indian Law Penal Code Platform (Full Stack 2026 Submission)
 
-Welcome to **LexVantage**, a comprehensive, production-grade platform for the **Indian Law Penal Code**. This repository houses both the high-performance RESTful API backend (Node.js, Express, MongoDB) and the sleek, responsive frontend application (React, Vite, Tailwind CSS). It manages complex legal datasets (IPC, CrPC, CPC, MVA, HMA, IEA, IDA, NIA) and exposes them through a highly secure, optimized API structure, paired with a modern, high-contrast monochrome glassmorphism user interface.
+Welcome to **LexVantage**, a comprehensive, production-grade platform designed to digitize and streamline access to the **Indian Law Penal Code**. This repository houses both the high-performance RESTful API backend (Node.js, Express, MongoDB) and the sleek, responsive frontend application (React, Vite, Tailwind CSS). 
+
+LexVantage manages complex legal datasets (IPC, CrPC, CPC, MVA, HMA, IEA, IDA, NIA) and exposes them through a highly secure, optimized API structure, paired with a modern, high-contrast monochrome glassmorphism user interface.
+
+---
+
+## ✨ Key Features & Use Cases
+
+LexVantage is built for legal professionals, law students, and the general public to easily navigate India's complex legal framework.
+
+*   **🔍 Advanced Fuzzy Search**: Instantly find relevant laws, sections, and chapters using natural language queries across thousands of documents.
+*   **📚 Comprehensive Legal Library**: Browse through 8 major legal datasets including the Indian Penal Code (IPC), Code of Criminal Procedure (CrPC), and more.
+*   **🔖 Bookmarks & Personalization**: Save important laws for quick reference and automatically track your recent viewing history.
+*   **📈 Administrative Analytics**: Built-in dashboards to track the most viewed laws, search trends, user activity, and platform usage.
+*   **🛡️ Enterprise-Grade Security**: Fully secured with JWT stateless authentication, role-based access control (RBAC), rate limiting, and comprehensive Helmet headers.
+*   **🖤 Premium Aesthetic**: A custom-designed, high-contrast monochrome UI featuring advanced `backdrop-grayscale` glassmorphism techniques for a highly professional experience.
 
 ---
 

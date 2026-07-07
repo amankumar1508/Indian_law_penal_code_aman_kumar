@@ -80,11 +80,11 @@ LexVantage manages complex legal datasets — **IPC, CrPC, CPC, MVA, HMA, IEA, I
 
 | Law Directory | Fuzzy Search |
 |:---:|:---:|
-| ![Law directory preview](https://placehold.co/500x300/0d0d0d/ffffff?text=Law+Directory+Screenshot) | ![Search preview](https://placehold.co/500x300/0d0d0d/ffffff?text=Fuzzy+Search+Demo) |
+| ![Law directory preview](frontend/public/previews/preview.png) | ![Search preview](frontend/public/previews/preview.png) |
 
 | Analytics Dashboard | Admin Panel |
 |:---:|:---:|
-| ![Analytics preview](https://placehold.co/500x300/0d0d0d/ffffff?text=Analytics+Dashboard) | ![Admin preview](https://placehold.co/500x300/0d0d0d/ffffff?text=Admin+Panel) |
+| ![Analytics preview](frontend/public/previews/preview.png) | ![Admin preview](frontend/public/previews/preview.png) |
 
 <sub>💡 Tip: use a tool like <a href="https://www.screentogif.com/">ScreenToGif</a> or <a href="https://gifcap.dev/">gifcap</a> to record short GIFs of key flows (search → open law → bookmark) and embed them here for maximum impact.</sub>
 
